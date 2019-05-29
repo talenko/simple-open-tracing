@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  profiles: local
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 0.2
+    log:
+      slf4j:
+        whitelisted-mdc-keys:
+          - X-ExampleKey1
+          - X-ExampleKey2
+
+debug: true

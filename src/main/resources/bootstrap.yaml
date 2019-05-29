@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: simple-open-tracing
+# ONLY WHEN THE FOLLOWING IS UNCOMMENTED DOES THE environment have "spring.sleuth.log.slf4j.whitelisted-mdc-keys[0]"
+# AVAILABLE...DOES NOT WORK WHEN ONLY DEFINED INSIDE `application.yaml`...
+#  sleuth:
+#    log:
+#      slf4j:
+#        whitelisted-mdc-keys:
+#          - X-ExampleKey1
+#          - X-ExampleKey2
